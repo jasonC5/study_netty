@@ -9,6 +9,7 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.CharsetUtil;
+import org.junit.Test;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -29,6 +30,7 @@ public class MyNetty {
         System.out.println(1);
     }
 
+    @Test
     public void clientMode() throws InterruptedException {
         NioEventLoopGroup thread = new NioEventLoopGroup();//一个多路复用器
         //客户端
